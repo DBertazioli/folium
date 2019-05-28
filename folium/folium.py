@@ -28,7 +28,7 @@ ENV = Environment(loader=PackageLoader('folium', 'templates'))
 #https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js
 _default_js = [
     ('leaflet',
-     'https://codepen.io/dbertazioli/pen/MdBrdV.js'),
+     'https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js'),
     ('jquery',
      'https://code.jquery.com/jquery-1.12.4.min.js'),
     ('bootstrap',
@@ -39,7 +39,7 @@ _default_js = [
 
 _default_css = [
     ('leaflet_css',
-     'https://codepen.io/dbertazioli/pen/MdBrdV.css'),
+     'https://codepen.io/dbertazioli/pen/LoBmKo.css'),
     ('bootstrap_css',
      'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'),
     ('bootstrap_theme_css',
