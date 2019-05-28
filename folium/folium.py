@@ -26,7 +26,7 @@ ENV = Environment(loader=PackageLoader('folium', 'templates'))
 
 _default_js = [
     ('leaflet',
-     'https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js'),
+     'https://raw.githubusercontent.com/DBertazioli/folium/master/package/dist/leaflet.js'),
     ('jquery',
      'https://code.jquery.com/jquery-1.12.4.min.js'),
     ('bootstrap',
