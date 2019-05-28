@@ -346,7 +346,7 @@ class Map(MacroElement):
 
         # Import Css
         for name, url in _default_css:
-            figure.header.add_child(CssLink(url), name=name, download=True)
+            figure.header.add_child(CssLink(url, download=True), name=name)
 
         figure.header.add_child(Element(
             '<style>html, body {'
