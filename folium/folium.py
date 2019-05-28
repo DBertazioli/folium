@@ -37,7 +37,7 @@ _default_js = [
 
 _default_css = [
     ('leaflet_css',
-     'https://raw.githubusercontent.com/DBertazioli/folium/master/leaflet.css'),
+     'https://raw.githubusercontent.com/DBertazioli/folium/master/package/dist/leaflet.css'),
     ('bootstrap_css',
      'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'),
     ('bootstrap_theme_css',
@@ -346,7 +346,7 @@ class Map(MacroElement):
 
         # Import Css
         for name, url in _default_css:
-            figure.header.add_child(CssLink(url), name=name)
+            figure.header.add_child(CssLink(url), name=name, download=True)
 
         figure.header.add_child(Element(
             '<style>html, body {'
