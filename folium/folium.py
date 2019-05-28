@@ -24,9 +24,11 @@ from jinja2 import Environment, PackageLoader, Template
 ENV = Environment(loader=PackageLoader('folium', 'templates'))
 
 #https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css
+#https://codepen.io/dbertazioli/pen/MdBrdV
+#https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js
 _default_js = [
     ('leaflet',
-     'https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js'),
+     'https://codepen.io/dbertazioli/pen/MdBrdV.js'),
     ('jquery',
      'https://code.jquery.com/jquery-1.12.4.min.js'),
     ('bootstrap',
@@ -37,7 +39,7 @@ _default_js = [
 
 _default_css = [
     ('leaflet_css',
-     'https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css'),
+     'https://codepen.io/dbertazioli/pen/MdBrdV.css'),
     ('bootstrap_css',
      'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'),
     ('bootstrap_theme_css',
